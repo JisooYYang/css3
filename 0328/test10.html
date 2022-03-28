@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test10.htm(Fulldown menu)</title> <!-- 메뉴만들때는 nav(igation)사용-->
+  <style>
+    body, ul, li { 
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    a {
+      /* color: blue;
+      text-decoration: none; */
+      color: inherit;   /* 부모가 쓰는 양식을 따라서 함 */
+      text-decoration: inherit;
+    }
+    .menu {
+      text-align: center;
+    }
+    .menu > ul {
+      background-color: lightgray;
+      display: inline-block;
+      padding: 0px 10px;  /* 위아래 오왼*/
+      border-radius: 5px;
+    }
+    .menu > ul > li {
+      display: inline-block;
+    }
+    .menu > ul > li > a {
+      /* background-color: #f00; */
+      display: inline-block;
+      padding: 10px;
+    }
+    .menu > ul > li:hover > a {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">주메뉴 1</a></li>
+      <li><a href="#">주메뉴 2</a></li>
+      <li><a href="#">주메뉴 3</a></li>
+      <li><a href="#">주메뉴 4</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
